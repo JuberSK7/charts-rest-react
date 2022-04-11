@@ -1,24 +1,20 @@
-import logo from './logo.svg';
+import { Doughnut } from 'react-chartjs-2';
 import './App.css';
+import BarChart from './ChartComponent/BarChart';
+//import DoughChart from './ChartComponent/DoughChart';
+//import LineChart from './ChartComponent/LineChart';
+//import PieChart from './ChartComponent/PieChart';
+import Navbar from './Navbar';
 
 function App() {
   return (
+    <>
+    <Navbar/>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+     <BarChart/>
+   </div>
+    
+    </>
   );
 }
 
